@@ -1,7 +1,10 @@
 <?php
+//Complete the function that calculates the area of the red square, when the length of the circular arc A is given as the input. Return the result rounded to two decimals.
 
 
-$hello = "Hello World";
+function square_area($A)
+{
+    return round(pow($A * 4 / pi(), 2), 2);
+}
 
-echo substr($hello, 3); // returns "H"
-
+var_dump(square_area(14.05)); // 1.62
